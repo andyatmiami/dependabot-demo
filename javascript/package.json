@@ -6,5 +6,9 @@
   "dependencies": {
     "hot-formula-parser": "^3.0.0",
     "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "test": "3.3.0"
   }
 }
