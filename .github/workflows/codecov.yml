@@ -19,12 +19,15 @@ jobs:
           cache-dependency-path: javascript/package-lock.json
 
       - name: Install dependencies
+        working-directory: ./javascript
         run: npm install
 
       - name: Run tests
+        working-directory: ./javascript
         run: npx jest --coverage
 
       - name: Upload results to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          directory: ./coverage
