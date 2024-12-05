@@ -1,6 +1,6 @@
-
+import { dummyFunc } from "./function";
 
 test('baseline', () => {
-        expect(true).toBe(true);
+        expect(dummyFunc()).toBe(true);
     }
 );
